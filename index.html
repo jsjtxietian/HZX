@@ -54,8 +54,8 @@
             width: 128px;
             background-size: cover;
             border-radius: 200px;
-            box-shadow: 0px 0px 40px rgba(63, 81, 181, 0.72);
-            border: 3px solid #00a0ff;
+            box-shadow: 0px 0px 40px rgba(255,255,255,1);
+            border: 3px solid #ffffff;
             opacity: 1;
             margin: 0 auto;
             margin-top: 20px;
@@ -92,6 +92,7 @@
             text-align: center;
             width: 100%;
             font-weight: bold;
+            color: #ffffff;
         }
 
         .text-right {
@@ -110,7 +111,7 @@
         <img src="./src/head.jpg" id="logo">
     </div>
     <canvas class="canvas" width="1820" height="905"></canvas>
-    <p class="text" style="color: #ed3073;">
+    <p class="text" >
         We fell in love
         <br />
         <span id="span_dt_dt"></span>
@@ -494,9 +495,9 @@
             }
 
             function setFontSize(s) {
-                //here bold
-                shapeContext.font = s + 'px ' + fontFamily;
-                // shapeContext.font = 'bold ' + s + 'px ' + fontFamily;
+                //todo here bold
+                // shapeContext.font = s + 'px ' + fontFamily;
+                shapeContext.font = 'bold ' + s + 'px ' + fontFamily;
             }
 
             function isNumber(n) {
